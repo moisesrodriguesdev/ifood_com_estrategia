@@ -1,0 +1,28 @@
+{
+  "name": "moisesrodriguesdev/ifood_with_strategy",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Moises Rodrigues",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "phpunit/phpunit": "^9.3.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "IfoodStrategy\\": "src/"
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "IfoodStrategy\\Test\\": "tests/Unit"
+      }
+    },
+    "files": [
+      "src/Config.php"
+    ]
+  }
+}
