@@ -1,6 +1,6 @@
 {
-  "name": "moisesrodriguesdev/ifood_with_strategy",
-  "description": "description",
+  "name": "moisesrodriguesdev/ifood_com_estrategia",
+  "description": "Estrutura de integração com Ifood aplicado padrão de projeto Strategy",
   "minimum-stability": "stable",
   "license": "proprietary",
   "authors": [
@@ -10,7 +10,9 @@
     }
   ],
   "require": {
-    "phpunit/phpunit": "^9.3.3"
+    "php": ">=7.4",
+    "phpunit/phpunit": "^9.3.3",
+    "spatie/laravel-collection-macros": "^7.2"
   },
   "autoload": {
     "psr-4": {
