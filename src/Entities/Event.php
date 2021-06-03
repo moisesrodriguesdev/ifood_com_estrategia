@@ -84,4 +84,18 @@ class Event
     {
         $this->metadata = $metadata;
     }
+
+    /**
+     * @return string[]
+     */
+    public function getPayloadToAck(): array
+    {
+        return [
+            'id' =>  $this->getId(),
+            'code' =>  $this->getCode(),
+            'fullCode' =>  $this->getFullCode(),
+            'orderId' =>  $this->getOrderId(),
+            'createdAt' =>  $this->getCreatedAt()
+        ];
+    }
 }
