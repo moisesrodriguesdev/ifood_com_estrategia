@@ -8,9 +8,9 @@ use IfoodStrategy\Entities\Event;
 class ReadyToPickup implements EventContract
 {
 
-    public function handle(Event $event): void
+    public function handle(Event $event): string
     {
-        // TODO: Implement handle() method.
+        return "handle ready to pickup";
     }
 
     public function ack(array $event): void

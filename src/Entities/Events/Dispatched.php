@@ -8,9 +8,9 @@ use IfoodStrategy\Entities\Event;
 class Dispatched implements EventContract
 {
 
-    public function handle(Event $event): void
+    public function handle(Event $event): string
     {
-        // TODO: Implement handle() method.
+        return "handle dispatched";
     }
 
     public function ack(array $event): void

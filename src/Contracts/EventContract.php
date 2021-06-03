@@ -6,7 +6,7 @@ use IfoodStrategy\Entities\Event;
 
 interface EventContract
 {
-    public function handle(Event $event): void;
+    public function handle(Event $event): string;
 
     public function ack(array $event): void;
 }

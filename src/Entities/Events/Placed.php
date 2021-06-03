@@ -8,9 +8,9 @@ use IfoodStrategy\Entities\Event;
 class Placed implements EventContract
 {
 
-    public function handle(Event $event): void
+    public function handle(Event $event): string
     {
-        // TODO: Implement handle() method.
+        return "handle placed";
     }
 
     public function ack(array $event): void
