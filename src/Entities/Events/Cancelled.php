@@ -22,13 +22,12 @@ class Cancelled implements EventContract
 
         switch ($event->getCode()) {
             case 'CAN':
-                /** @var $this $messageHandle */
                 $messageHandle = $this->handleCancelledWithSuccess();
                 break;
             case 'CCR':
                 $messageHandle = $this->handleConsumerCancellationRequest();
                 break;
-            case 'CARF' || 'CCD':
+            case in_array($event->getCode(), ['CARF', 'CCD']):
                 $messageHandle = $this->handleCancellationRequestDenied();
                 break;
             case 'CCA':

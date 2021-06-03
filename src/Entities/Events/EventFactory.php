@@ -27,7 +27,7 @@ class EventFactory
                 return new Dispatched;
             case 'CON':
                 return new Concluded;
-            case 'CAN':
+            case in_array($event, ['CAN', 'CAR', 'CARF', 'CCR', 'CCA', 'CCD']):
                 return new Cancelled;
             default:
                 throw new \InvalidArgumentException("Event {$event} invalid");
